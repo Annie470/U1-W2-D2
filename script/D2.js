@@ -107,11 +107,33 @@ console.log("Totale da pagare: " + checkout);
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
-  Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
+  Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro
+  valore, dal più alto al più basso.
   Alla fine mostra il risultato in console.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+let var1 = 28;
+let var2 = 55;
+let var3 = 7;
+if (var1 > var2 && var1 > var3) {
+  if (var2 > var3) {
+    console.log(var1 + " " + var2 + " " + var3);
+  } else {
+    console.log(var1 + " " + var3 + " " + var2);
+  }
+} else if (var2 > var1 && var2 > var3) {
+  if (var1 > var3) {
+    console.log(var2 + " " + var1 + " " + var3);
+  } else {
+    console.log(var2 + " " + var3 + " " + var1);
+  }
+} else {
+  if (var1 > var2) {
+    console.log(var3 + " " + var1 + " " + var2);
+  } else {
+    console.log(var3 + " " + var2 + " " + var1);
+  }
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
