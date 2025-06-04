@@ -55,19 +55,55 @@ if (num3 === 8 || num4 === 8) {
 }
 
 /* ESERCIZIO 5
-  Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
-  C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
-  Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
+  Stai lavorando su un sito di e-commerce. Stai salvando il saldo 
+  totale del carrello dell'utente in una variabile "totalShoppingCart".
+  C'è una promozione in corso: se il totale del carrello supera 50, l'utente 
+  ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
+  Crea un algoritmo che determini l'ammontare totale che deve essere 
+  addebitato all'utente per il checkout.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 30;
+const spedizione = 10;
+if (totalShoppingCart >= 50) {
+  checkout = totalShoppingCart;
+  console.log(
+    "Complimentoni poichè hai le mani bucate ha vinto la spedizione gratuita!"
+  );
+} else {
+  checkout = totalShoppingCart + spedizione;
+  console.log(
+    "Non hai soddisfatto i requisiti minimi per la spedizione gratuita"
+  );
+}
+console.log("Totale da pagare: " + checkout);
 
 /* ESERCIZIO 6
-  Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
-  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
+  Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato
+   il 20% su ogni prodotto.
+  Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo,
+   determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+totalShoppingCart = 80;
+const promo = (totalShoppingCart * 20) / 100;
+if (totalShoppingCart >= 50) {
+  totalShoppingCart -= promo;
+  console.log(
+    "Complimentoni poichè hai le mani bucate ha vinto la spedizione gratuita!"
+  );
+} else {
+  totalShoppingCart -= promo;
+  totalShoppingCart += spedizione;
+  console.log(
+    "Non hai soddisfatto i requisiti minimi per la spedizione gratuita"
+  );
+}
+checkout = totalShoppingCart;
+console.log(
+  "Oggi è il Black Friday, con il 20% di promo hai risparmiato: " + promo
+);
+console.log("Totale da pagare: " + checkout);
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
