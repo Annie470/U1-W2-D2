@@ -136,28 +136,39 @@ if (var1 > var2 && var1 > var3) {
 }
 
 /* ESERCIZIO 8
-  Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
+  Crea un algoritmo per verificare che un valore fornito sia un numero oppure no 
+  (suggerimento: cerca su un motore di ricerca "typeof").
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+let value = 10;
+let value2 = "CheFIGATA";
+console.log(typeof value);
+console.log(typeof value2);
 
 /* ESERCIZIO 9
-  Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
+  Crea un algoritmo per controllare se un numero fornito sia pari o dispari 
+  (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+let num5 = 5;
+if (num5 % 2 !== 0) {
+  console.log("Il numero è dispari");
+} else {
+  console.log("Il numero è pari");
+}
 
 /* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
-*/
+  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio 
+  corretto in ogni circostanza.
+  */
+let val = 7;
+if (val < 5) {
+  console.log("Meno di 5");
+} else if (val < 10) {
+  console.log("Meno di 10");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
