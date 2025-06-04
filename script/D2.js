@@ -169,41 +169,48 @@ if (val < 5) {
 } else {
   console.log("Uguale a 10 o maggiore");
 }
-
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 11
-  Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
+  Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", 
+  il cui valore sarà "Toronto".
 */
-
 const me = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-
+me.city = "Toronto";
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 12
-  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
+  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere 
+  la proprietà "lastName".
 */
-
+delete me.lastName;
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 13
-  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
+  Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere 
+  l'ultimo elemento della proprietà "skills".
 */
-
+me.skills.pop();
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 14
-  Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
+  Scrivi del codice per creare un array inizialmente vuoto. 
+  Riempilo successivamente con i numeri da 1 a 10.
 */
-
+const numerini = [];
+numerini.push(2, 3, 4, 5, 6, 7, 8, 9, 10);
+numerini.unshift(1);
+console.log(numerini);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 15
-  Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
+  Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, 
+  con il valore 100.
 */
-
+numerini.splice(9, 1, 100);
+console.log(numerini);
 /* SCRIVI QUI LA TUA RISPOSTA */
